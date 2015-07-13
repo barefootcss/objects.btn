@@ -33,6 +33,7 @@ $bare-btn-color: 				   #fff !default;
 	padding: bareRem($bare-sp-xs) bareRem($bare-sp-s);
 	border: $bare-btn-border-width $bare-btn-border-style $bare-btn-border-color;
 	border-radius: #bare-btn-border-radius;
+	outline: 0;
 	background-color: $bare-btn-background;
 	color: $bare-btn-color;
 
