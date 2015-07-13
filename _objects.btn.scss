@@ -1,6 +1,10 @@
 // 
-// defaults  
+// Declarations  
 // ========================================================================== 
+
+//
+// Defaults:
+//
 
 $bare-btn-border-width:				1px !default;
 $bare-btn-border-style:			  solid !default;
@@ -8,6 +12,12 @@ $bare-btn-border-color:			#e02a2b !default;
 $bare-btn-border-radius:		    2px !default;
 $bare-btn-background:			#e02a2b !default;
 $bare-btn-color: 				   #fff !default;
+
+//
+// Features:
+//
+
+$bare-btn--pill:				  false !default;
 
 /* 
    #btn
@@ -25,6 +35,7 @@ $bare-btn-color: 				   #fff !default;
 	display: inline-block;
 	vertical-align: middle;
 	font: inherit;
+	line-height: normal;
 	text-align: center;
 	text-decoration: none;
 	margin: 0;
@@ -46,3 +57,20 @@ $bare-btn-color: 				   #fff !default;
 	}
 }
 
+.o-btn::-moz-focus-inner {
+    border:  0;
+    padding: 0;
+}
+
+// 
+// #btn--pill
+// ========================================================================== 
+
+@if ($bare-btn--pill == true) {
+
+	.o-btn--pill {
+		border-radius: 99px;
+	}
+
+}
+	
