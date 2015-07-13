@@ -1,0 +1,47 @@
+// 
+// defaults  
+// ========================================================================== 
+
+$bare-btn-border-width:				1px !default;
+$bare-btn-border-style:			  solid !default;
+$bare-btn-border-color:			#e02a2b !default;
+$bare-btn-border-radius:		    2px !default;
+$bare-btn-background:			#e02a2b !default;
+$bare-btn-color: 				   #fff !default;
+
+/* 
+   #btn
+   ========================================================================== */
+
+/**
+ * The btn object creates simple, flat, buttons.
+ *
+ * Usage:
+ *
+ * <input type="submit" class="btn"/>
+ */
+
+.o-btn {
+	display: inline-block;
+	vertical-align: middle;
+	font: inherit;
+	text-align: center;
+	text-decoration: none;
+	margin: 0;
+	cursor: pointer;
+	overflow: visible;
+	padding: bareRem($bare-sp-xs) bareRem($bare-sp-s);
+	border: $bare-btn-border-width $bare-btn-border-style $bare-btn-border-color;
+	border-radius: #bare-btn-border-radius;
+	background-color: $bare-btn-background;
+	color: $bare-btn-color;
+
+	&:hover {
+		background: lighten($bare-btn-background, 4%);
+	}
+
+	&:active {
+		background: darken($bare-btn-background, 4%);
+	}
+}
+
